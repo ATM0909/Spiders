@@ -1,0 +1,184 @@
+2019-04-08 22:39:49 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 27, in parse
+    s_title1 = s_title .select("a").get_text()
+AttributeError: 'list' object has no attribute 'get_text'
+2019-04-08 22:40:19 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 28, in parse
+    s_title1 = s_title .select("a").get_text()
+AttributeError: 'list' object has no attribute 'get_text'
+2019-04-08 22:41:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 28, in parse
+    s_title1 = s_title .select("a").get_text()
+AttributeError: 'list' object has no attribute 'get_text'
+2019-04-08 22:47:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 33, in parse
+    s_title1 = s_title .select("a").get_text()
+AttributeError: 'list' object has no attribute 'get_text'
+2019-04-08 23:06:04 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 23, in parse
+    s_cast = b_casts .next_sibling.select(" li a")
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:07:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 27, in parse
+    s_cast = b_title .parent.next_sibling.select("  li a")
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:18:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 32, in parse
+    print(s_cast.select("li a").get_text())
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:19:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 32, in parse
+    print(s_cast.select("a").get_text())
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:19:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 30, in parse
+    s = s_cast.select("a").get_text()
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:20:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 30, in parse
+    s = s_cast.select("a")
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:20:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 30, in parse
+    s = s_cast.select(" li a")
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:21:51 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 30, in parse
+    s = s_cast.select(" li a")
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'select'
+2019-04-08 23:25:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 31, in parse
+    s = s_cast.xpath("./li/a")
+  File "D:\Conda\lib\site-packages\bs4\element.py", line 742, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'xpath'
+2019-04-08 23:39:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 34, in parse
+    print(s_cast.select("li a").get_text())
+AttributeError: 'list' object has no attribute 'get_text'
+2019-04-08 23:55:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 59, in parse
+    s_casts = b_title .xpath("../following-sibling::ul[1]")  # ul列表
+AttributeError: 'str' object has no attribute 'xpath'
+2019-04-08 23:57:22 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 58, in parse
+    item["b_title"] = b_title.xpath("./text()").extract_first()
+AttributeError: 'str' object has no attribute 'xpath'
+2019-04-08 23:58:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 59, in parse
+    b_title = b_title.xpath("./text()").extract_first()
+AttributeError: 'str' object has no attribute 'xpath'
+2019-04-08 23:58:31 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 59, in parse
+    b_title = b_title.xpath("./text()").extract_first()
+AttributeError: 'str' object has no attribute 'xpath'
+2019-04-08 23:59:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 60, in parse
+    b_title = b_title.xpath("./text()").extract_first()
+AttributeError: 'str' object has no attribute 'xpath'
+2019-04-09 00:04:38 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\parsel\selector.py", line 238, in xpath
+    **kwargs)
+  File "src/lxml/etree.pyx", line 1586, in lxml.etree._Element.xpath
+  File "src/lxml/xpath.pxi", line 307, in lxml.etree.XPathElementEvaluator.__call__
+  File "src/lxml/xpath.pxi", line 227, in lxml.etree._XPathEvaluatorBase._handle_result
+lxml.etree.XPathEvalError: Invalid expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 64, in parse
+    s_casts = b_title .xpath("../following-sibling::ul[1]./li/a/text()").extract()  # ul列表
+  File "D:\Conda\lib\site-packages\parsel\selector.py", line 242, in xpath
+    six.reraise(ValueError, ValueError(msg), sys.exc_info()[2])
+  File "D:\Conda\lib\site-packages\six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Conda\lib\site-packages\parsel\selector.py", line 238, in xpath
+    **kwargs)
+  File "src/lxml/etree.pyx", line 1586, in lxml.etree._Element.xpath
+  File "src/lxml/xpath.pxi", line 307, in lxml.etree.XPathElementEvaluator.__call__
+  File "src/lxml/xpath.pxi", line 227, in lxml.etree._XPathEvaluatorBase._handle_result
+ValueError: XPath error: Invalid expression in ../following-sibling::ul[1]./li/a/text()
+2019-04-09 00:05:25 [scrapy.core.scraper] ERROR: Spider error processing <GET https://book.suning.com/?safp=d488778a.10038.0.8cca61ce53> (referer: None)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\ProxyPool-master\myscrapy\myscrapy\spiders\suning.py", line 70, in parse
+    s_title = s_cast.xpath("./li/a/text()").extract()
+AttributeError: 'str' object has no attribute 'xpath'

@@ -1,0 +1,15 @@
+2019-04-20 23:53:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://list.jd.com/list.html?cat=1713,3258,3297&tid=3297> (referer: https://book.jd.com/booksort.html)
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\Administrator\Desktop\python_learn\scrapy_learn\book_info\book_info\spiders\jd.py", line 44, in book_page
+    item["price"] = self.book_price_url(book_sku)
+  File "C:\Users\Administrator\Desktop\python_learn\scrapy_learn\book_info\book_info\spiders\jd.py", line 68, in book_price_url
+    return json.loads(r.content.decode())[0]["op"]
+  File "D:\Conda\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\Conda\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Conda\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

@@ -1,0 +1,36 @@
+2019-04-20 01:04:15 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\scrapy\core\engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "D:\Conda\lib\site-packages\scrapy_redis\spiders.py", line 83, in next_requests
+    data = fetch_one(self.redis_key)
+  File "D:\Conda\lib\site-packages\redis\client.py", line 1607, in lpop
+    return self.execute_command('LPOP', name)
+  File "D:\Conda\lib\site-packages\redis\client.py", line 775, in execute_command
+    return self.parse_response(connection, command_name, **options)
+  File "D:\Conda\lib\site-packages\redis\client.py", line 789, in parse_response
+    response = connection.read_response()
+  File "D:\Conda\lib\site-packages\redis\connection.py", line 642, in read_response
+    raise response
+redis.exceptions.ResponseError: WRONGTYPE Operation against a key holding the wrong kind of value
+2019-04-20 01:04:15 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method RedisMixin.spider_idle of <BossSpider 'boss' at 0x1a219aefeb8>>
+Traceback (most recent call last):
+  File "D:\Conda\lib\site-packages\scrapy\utils\signal.py", line 30, in send_catch_log
+    *arguments, **named)
+  File "D:\Conda\lib\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\Conda\lib\site-packages\scrapy_redis\spiders.py", line 121, in spider_idle
+    self.schedule_next_requests()
+  File "D:\Conda\lib\site-packages\scrapy_redis\spiders.py", line 115, in schedule_next_requests
+    for req in self.next_requests():
+  File "D:\Conda\lib\site-packages\scrapy_redis\spiders.py", line 83, in next_requests
+    data = fetch_one(self.redis_key)
+  File "D:\Conda\lib\site-packages\redis\client.py", line 1607, in lpop
+    return self.execute_command('LPOP', name)
+  File "D:\Conda\lib\site-packages\redis\client.py", line 775, in execute_command
+    return self.parse_response(connection, command_name, **options)
+  File "D:\Conda\lib\site-packages\redis\client.py", line 789, in parse_response
+    response = connection.read_response()
+  File "D:\Conda\lib\site-packages\redis\connection.py", line 642, in read_response
+    raise response
+redis.exceptions.ResponseError: WRONGTYPE Operation against a key holding the wrong kind of value
